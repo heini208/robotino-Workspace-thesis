@@ -9,7 +9,6 @@ project(roberta_robotino_translator)
 ## is used, also find other catkin packages
 find_package(catkin REQUIRED COMPONENTS
   robotino_msgs
-  ros_roberta_lab
   roscpp
   rospy
   std_msgs
@@ -107,7 +106,7 @@ find_package(catkin REQUIRED COMPONENTS
 catkin_package(
 #  INCLUDE_DIRS include
 #  LIBRARIES roberta_robotino_translator
-#  CATKIN_DEPENDS robotino_msgs ros_roberta_lab roscpp rospy std_msgs
+#  CATKIN_DEPENDS robotino_msgs roscpp rospy std_msgs
 #  DEPENDS system_lib
 )
 

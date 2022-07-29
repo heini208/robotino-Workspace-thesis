@@ -1,0 +1,12 @@
+<launch>
+    <arg name="hostname" default="127.0.1.1"/>
+    <arg name="max_linear_vel" default="0.2" />
+    <include file="$(find robotino_node)/launch/robotino_node.launch"
+             pass_all_args="true">
+    </include>
+    <node pkg="roberta_robotino_translator" name="AnalogInTranslator" type="AnalogInTranslator.py"></node>
+    <node pkg="roberta_robotino_translator" name="DigitalInTranslator" type="DigitalInTranslator.py"></node>
+    <node pkg="roberta_robotino_translator" name="DigitalOutTranslator" type="DigitalOutTranslator.py"></node>
+    <node pkg="roberta_robotino_translator" name="ResetOdometryTranslator" type="ResetOdometryTranslator.py"></node>
+</launch>
+
